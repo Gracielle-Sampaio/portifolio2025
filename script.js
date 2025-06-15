@@ -3,23 +3,40 @@ const mudarmodo = document.getElementById("mudarmodo");
 const body = document.body;
 const botoesConteudo = document.querySelectorAll('.botao-cont');
 const divsConteudo = document.querySelectorAll('.conteudo');
+const conteudoBotao = document.querySelectorAll('.botao')
 
 
 mudarmodo.addEventListener('click', function(){
     cliques++;
     body.classList.remove('modoclaro', 'modoescuro', 'modored')
+
+    conteudoBotao.forEach(botao => {
+        botao.classList.remove('botao', 'botao2', 'botao3');
+    });
     switch (cliques % 4){
         case 1:
             body.classList.toggle('modoclaro');
+            conteudoBotao.forEach(botao => {
+                botao.classList.add('botao');
+            });
             break
         case 2:
             body.classList.toggle('modoescuro');
+            conteudoBotao.forEach(botao => {
+                botao.classList.add('botao2');
+            });
             break
         case 3:
             body.classList.toggle('modored');
+            conteudoBotao.forEach(botao => {
+                botao.classList.add('botao3');
+            });
             break
         case 0:
             body.classList.toggle('modoclaro');
+            conteudoBotao.forEach(botao => {
+                botao.classList.add('botao');
+            });
             break
     }
 

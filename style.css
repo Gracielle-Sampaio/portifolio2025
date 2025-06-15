@@ -45,12 +45,66 @@ main{
     display: flex;
     gap:10vw;
     flex-direction:row;
-    align-text: center;
     align-items:center;
     padding: 15vh 0;
 }
+#cont2{
+    display: flex;
+    gap:10vw;
+    flex-direction:column;
+    align-items:center;
+    padding: 5vh 0;
+}
+#cont3{
+    padding: 15vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    box-sizing: content-box;
+    border-radius: 20px;
+    padding: 20px;
+    width: 400px;
+    text-align: justify;
+}
+label{
+    font-weight: bold;
+    width: 100%;
+}
+input{
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid ;
+    height: 20px;
+    margin: 10px 0;
+    
+}
+#enviar{
+    height: 50px;
+    font-size: 1rem;
+    transition: 0.3s ease;
+    cursor: pointer;
+    width: 100%;
+    margin-left:3px;
+}
+textarea{
+    width: 100%;
+    border: 2px solid ;
+    border-radius: 10px;
+}
+.divprojetos{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.projetos{
+    max-width: 20vw;
+    margin: 20px;
+}
 .conteudo >.active{
-    trasition:0.3s;
+    transition:0.3s;
     display: block;
 }
 .conteudo{
@@ -69,55 +123,136 @@ li::before {
 }
 
 button{
-    width: 45%;
     border-radius: 20px;
     height: 5vh;
-    margin: 10px;
+    font-size: 1rem;
+    transition: 0.3s ease;
+    box-shadow: 2px 2px 2px;
+    border:  0.5px solid var(--bege);
+    padding: 0 5vw;
+    width: 100%;
+}
+button:hover{
+    font-size: 1.2rem;
 }
 .modoclaro{
     background-color: var(--bege);
     color: var(--cinza);
 }
+.botoes{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: space-between;
+    gap: 10px;
+}
 
-.modoclaro>.botao2{
+.botao{
     background-color: var(--vermelho);
     color: var(--bege);
+      
 }
-.modoclaro>.botao3{
+.botao:hover{
     background-color: var(--bege);
-    color: var(--vermelho);
-    border: 5px solid var(--vermelho);
+    color: var(--vermelho);  
 }
+
+.botao2{
+    background-color: var(--cinza);
+    color: var(--bege);
+      
+}
+.botao2:hover{
+    background-color: var(--bege);
+    color: var(--cinza);  
+}
+
+.botao3{
+    background-color: var(--bege);
+    color: var(--cinza);
+    
+      
+}
+.botao3:hover{
+    background-color: var(--cinza);
+    color: var(--bege);  
+}
+
 .modoclaro a{
     color: var(--cinza);
 }
 .modoclaro a:hover{
     border-bottom: 2px solid var(--vermelho);
 }
+.modoclaro form{
+    border: 2px solid var(--vermelho);
+    
+}
+.modoescuro form{
+    border: 2px solid var(--bege);
+    
+}
+.modored form{
+    border: 2px solid var(--bege);
+    
+}
 
 .modoescuro{
     background-color: var(--cinza);
     color: var(--bege);
 }
-.modoescuro button{
-    background-color: var(--vermelho);
-    color: var(--bege);
-}
+
 .modoescuro a{
     color: var(--bege);
+}
+.modoescuro a:hover{
+    border-bottom: 2px solid var(--bege);
 }
 
 .modored{
     background-color: var(--vermelho);
     color: var(--bege);
 }
-.modored button {
-    background-color: var(--cinza);
-    color: var(--bege);
-}
+
 .modored a{
     color: var(--bege);
 }
+.modored a:hover{
+    border-bottom: 2px solid var(--bege);
+}
 .projetos{
     border-radius: 20px;
+}
+footer{
+    text-align: center;
+    margin-top: 10vh;
+}
+@media screen and (max-width: 800px) {
+   
+    .botoes{
+    flex-wrap: wrap;
+ }
+ 
+  #cont1{
+    display: flex;
+    gap:10vw;
+    flex-direction:column;
+    align-items:center;
+    padding: 15vh 0;
+}
+.divprojetos{
+    display: flex;
+    gap:5vw;
+    flex-direction: column;
+}
+.projetos{
+    max-width: 50vw;
+    margin: 10px;
+}
+#cont2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 }
