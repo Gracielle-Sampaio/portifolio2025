@@ -95,8 +95,10 @@ textarea{
     border-radius: 10px;
 }
 .divprojetos{
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
     
 }
 .projetos{
@@ -244,6 +246,7 @@ footer{
     display: flex;
     gap:5vw;
     flex-direction: column;
+    align-content: center;
 }
 .projetos{
     max-width: 50vw;
