@@ -1,0 +1,123 @@
+:root{
+    --vermelho:#7F2327;
+    --cinza:#3E3B36;
+    --bege:#F2E8DF;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    justify-content:space-between;
+    display: flex;
+    flex-direction:row;
+    margin:auto;
+    padding:20px 10px;
+    align-items: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid;
+}
+#mudarmodo{
+    cursor:pointer;
+}
+nav> a{
+    padding:5px 15px;
+    text-decoration: none;
+    transition: 0.3s ease ;
+}
+a:hover{
+    font-size: 1.1rem;
+    border-radius: 50px;
+}
+img{
+    max-width: 300px;
+}
+p{
+    text-indent: 1.5rem;
+    text-align: justify;
+}
+
+main{
+    margin: auto;
+    max-width: 80vw;
+
+}
+#cont1{
+    display: flex;
+    gap:10vw;
+    flex-direction:row;
+    align-text: center;
+    align-items:center;
+    padding: 15vh 0;
+}
+.conteudo >.active{
+    trasition:0.3s;
+    display: block;
+}
+.conteudo{
+    display: none;
+}
+ol,ul,li{
+    list-style: none;
+}
+li::before {
+    content: "\f105"; 
+    font-family: "Font Awesome 6 Free"; 
+    font-weight: 900;  
+    font-size: 1.1em;
+    padding-right:5px; 
+
+}
+
+button{
+    width: 45%;
+    border-radius: 20px;
+    height: 5vh;
+    margin: 10px;
+}
+.modoclaro{
+    background-color: var(--bege);
+    color: var(--cinza);
+}
+
+.modoclaro>.botao2{
+    background-color: var(--vermelho);
+    color: var(--bege);
+}
+.modoclaro>.botao3{
+    background-color: var(--bege);
+    color: var(--vermelho);
+    border: 5px solid var(--vermelho);
+}
+.modoclaro a{
+    color: var(--cinza);
+}
+.modoclaro a:hover{
+    border-bottom: 2px solid var(--vermelho);
+}
+
+.modoescuro{
+    background-color: var(--cinza);
+    color: var(--bege);
+}
+.modoescuro button{
+    background-color: var(--vermelho);
+    color: var(--bege);
+}
+.modoescuro a{
+    color: var(--bege);
+}
+
+.modored{
+    background-color: var(--vermelho);
+    color: var(--bege);
+}
+.modored button {
+    background-color: var(--cinza);
+    color: var(--bege);
+}
+.modored a{
+    color: var(--bege);
+}
+.projetos{
+    border-radius: 20px;
+}
